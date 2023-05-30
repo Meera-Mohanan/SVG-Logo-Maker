@@ -49,18 +49,9 @@ const questions = [
 ];
 
 function isValidColor(colorValue) {
-  // Check if the color value is a valid color keyword
-  if (color[colorValue.toLowerCase()]) {
-    return true;
-  }
-
-  // Check if the color value is a valid hexadecimal number
+  // Check if the color value is a valid color keyword or a valid hexadecimal number
   const hexPattern = /^#([0-9A-Fa-f]{3}){1,2}$/;
-  if (hexPattern.test(colorValue)) {
-    return true;
-  }
-
-  return false;
+  return color[colorValue.toLowerCase()] || hexPattern.test(colorValue);
 }
 
 inquirer.prompt(questions)
@@ -74,13 +65,13 @@ function generateShapes(text, textColor, shapeType, shapeColor) {
   let shape;
   switch (shapeType) {
     case 'Triangle':
-      shape = new Triangle(text, textColor, shapeColor);
+      shape = new Triangle(text, shapeColor, textColor); // Swap shapeColor and textColor
       break;
     case 'Circle':
-      shape = new Circle(text, textColor, shapeColor);
+      shape = new Circle(text, shapeColor, textColor); // Swap shapeColor and textColor
       break;
     case 'Square':
-      shape = new Square(text, textColor, shapeColor);
+      shape = new Square(text, shapeColor, textColor); // Swap shapeColor and textColor
       break;
     default:
       console.log('Invalid shape type!');
