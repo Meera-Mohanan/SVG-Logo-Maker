@@ -19,7 +19,7 @@ const questions = [
   {
     type: 'input',
     name: 'textColor',
-    message: 'Enter color keyword or a hexadecimal number of the text',
+    message: 'Enter color keyword or a hexadecimal number for the text',
     validate: (response) => {
       if (!isValidColor(response)) {
         console.log('\n Invalid text color! Please enter a valid color keyword or hexadecimal number.');
@@ -37,7 +37,7 @@ const questions = [
   {
     type: 'input',
     name: 'shapeColor',
-    message: 'Enter color keyword or a hexadecimal number of the shape',
+    message: 'Enter color keyword or a hexadecimal number for the shape',
     validate: (response) => {
       if (!isValidColor(response)) {
         console.log('\n Invalid shape color! Please enter a valid color keyword or hexadecimal number.');
@@ -95,3 +95,5 @@ function generateShapes(text, textColor, shapeType, shapeColor) {
     }
   });
 }
+
+module.exports = { generateShapes };
