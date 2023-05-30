@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "name": "svg-logo-maker",
+  "description": "![MIT license](https://img.shields.io/badge/license-MIT-blue)   ## Description",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meera-Mohanan/SVG-Logo-Maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meera-Mohanan/SVG-Logo-Maker/issues"
+  },
+  "homepage": "https://github.com/Meera-Mohanan/SVG-Logo-Maker#readme"
+}
