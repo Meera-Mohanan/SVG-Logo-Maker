@@ -1,6 +1,5 @@
-# Ignore general build artifacts
-/build/
-/dist/
+# Ignore dependencies
+/node_modules
 
-# Ignore dependency directories
-/node_modules/
+# Ignore operating system files
+.DS_Store
