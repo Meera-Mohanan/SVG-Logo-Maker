@@ -39,6 +39,9 @@ Email me if you wish to contribute
   ```
   npm test
   ```
+  ## Walkthrough Video Link
+
+https://drive.google.com/file/d/1VoT5aJ0vrRVWsfY_ww00Xcf5DbXqOn8d/view
 
   ## Questions
  
